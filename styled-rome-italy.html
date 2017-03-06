@@ -3,24 +3,18 @@
 	
 	<head>
 		<title>Google API Map</title>
-		<meta name="viewport" content="initial-scale=1.0">
-		<meta charset="utf-8">
-		<style>
-			#map {
-				height: 100%;
-				}
-			html, body {
-				height: 100%;
-				margin: 0;
-				padding: 0;
-				}
-		</style>
 	</head>
+	
+	<style>
+		#romemap {
+			width: 100%;
+			height: 800px;
+			}
+	</style>
 
 	<body>
-		<h1>Styled Map of Rome, Italy using Google APIs*</h1>
-		<div id="map"></div>		
-		
+		<h1>Styled Map of Rome, Italy using Google APIs</h1>
+		<div id="romemap"></div>
 		<script src="rome.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?callback=initialize&key=AIzaSyBeSQ9bkptviHYt4hunO-_s7Zir791DnSU"
 						async defer></script>

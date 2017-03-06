@@ -5,8 +5,6 @@ function initMap() {
 		zoom: 13,
 		draggable: false,
 		scrollwheel: false
-		});
-	}
 [
   {
     "featureType": "landscape.man_made",
@@ -121,3 +119,5 @@ function initMap() {
     ]
   }
 ]
+		});
+	}

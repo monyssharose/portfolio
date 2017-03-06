@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<h1>Styled Map of Rome, Italy using Google APIs *</h1>
+	<h1>Styled Map of Rome, Italy using Google APIs</h1>
 <div id="map"></div>
 <script>
 	var map;
@@ -21,102 +21,12 @@
 	scrollwheel: false
 	});
 	}
-[
-	{
-	"featureType": "landscape.man_made",
-	"stylers": [
-		{"color": "#ada9b2"},
-		{"visibility": "on"},
-		{"weight": 8}
-		]
-	},
-	
-	{
-	"featureType": "landscape.natural","stylers": [
-		{"color": "#dbc8c7"},
-		{"visibility": "on"}
-		]
-	},
-	
-	{
-	"featureType": "landscape.natural.landcover",
-	"stylers": [
-		{"color": "#cb38da"}
-		]
-	},
-	
-	{
-	"featureType": "poi.attraction",
-	"stylers": [
-		{"visibility": "on"},
-		{"weight": 8}
-		]
-	},
-
-	{
-	"featureType": "poi.park",
-	"elementType": "geometry",
-	"stylers": [
-		{"color": "#126300"},
-		{"weight": 2}
-		]
-	},
-	
-	{
-	"featureType": "poi.park",
-	"elementType": "labels",
-	"stylers": [
-		{"visibility": "on"}
-		]
-	},
-
-	{
-	"featureType": "poi.place_of_worship",
-	"elementType": "labels",
-	"stylers": [
-		{"visibility": "on"}
-		]
-	},
-  
-	{
-	"featureType": "road.arterial",
-	"elementType": "labels",
-	"stylers": [
-		{"visibility": "off"}
-		]
-	},
-
-	{
-	"featureType": "road.highway",
-	"elementType": "labels",
-	"stylers": [
-		{"visibility": "off"}
-		]
-	},
-
-	{
-	"featureType": "road.local",
-	"stylers": [
-		{"visibility": "off"}
-		]
-	},
-
-	{
-	"featureType": "water",
-	"elementType": "geometry",
-	"stylers": [
-		{"color": "#3a76da"},
-		{"visibility": "on"}
-		]
-	}
-]
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeSQ9bkptviHYt4hunO-_s7Zir791DnSU&callback=initMap"
+<script src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBeSQ9bkptviHYt4hunO-_s7Zir791DnSU&center=41.89630452475929,12.435500482470715&zoom=12&format=png&maptype=roadmap&style=feature:landscape.man_made%7Ccolor:0xada9b2%7Cvisibility:on%7Cweight:8&style=feature:landscape.natural%7Ccolor:0xdbc8c7%7Cvisibility:on&style=feature:landscape.natural.landcover%7Ccolor:0xcb38da&style=feature:poi.attraction%7Cvisibility:on%7Cweight:8&style=feature:poi.park%7Celement:geometry%7Ccolor:0x126300%7Cweight:2&style=feature:poi.park%7Celement:labels%7Cvisibility:on&style=feature:poi.place_of_worship%7Celement:labels%7Cvisibility:on&style=feature:road.arterial%7Celement:labels%7Cvisibility:off&style=feature:road.highway%7Celement:labels%7Cvisibility:off&style=feature:road.local%7Cvisibility:off&style=feature:water%7Celement:geometry%7Ccolor:0x3a76da%7Cvisibility:on&size=480x360"
 async defer>
-
-
-
 </script>
+	
 </body>
+	
 </html>

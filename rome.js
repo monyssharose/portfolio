@@ -4,7 +4,7 @@ function initMap() {
 		center: {lat: 41.890333, lng: 12.491887},
 		zoom: 13,
 		draggable: false,
-		scrollwheel: false
+		scrollwheel: false,
 		styles: [
   {
     "featureType": "landscape.man_made",

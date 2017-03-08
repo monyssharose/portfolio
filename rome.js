@@ -5,8 +5,7 @@ function initMap() {
 		zoom: 13,
 		draggable: false,
 		scrollwheel: false
-var romemap=
-		[
+		styles: [
   {
     "featureType": "landscape.man_made",
     "stylers": [

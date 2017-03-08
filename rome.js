@@ -7,76 +7,26 @@ function initMap() {
 		scrollwheel: false,
 		styles: [
   {
+    "featureType": "administrative.country",
+    "stylers": [
+      {
+        "color": "#d9ccb9"
+      }
+    ]
+  },
+  {
     "featureType": "landscape.man_made",
     "stylers": [
       {
-        "color": "#ada9b2"
-      },
-      {
-        "visibility": "on"
-      },
-      {
-        "weight": 8
-      }
-    ]
-  },
-  {
-    "featureType": "landscape.natural",
-    "stylers": [
-      {
-        "color": "#dbc8c7"
-      },
-      {
-        "visibility": "on"
-      }
-    ]
-  },
-  {
-    "featureType": "landscape.natural.landcover",
-    "stylers": [
-      {
-        "color": "#cb38da"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.attraction",
-    "stylers": [
-      {
-        "visibility": "on"
-      },
-      {
-        "weight": 8
+        "color": "#d4d4d4"
       }
     ]
   },
   {
     "featureType": "poi.park",
-    "elementType": "geometry",
     "stylers": [
       {
-        "color": "#126300"
-      },
-      {
-        "weight": 2
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "labels",
-    "stylers": [
-      {
-        "visibility": "on"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.place_of_worship",
-    "elementType": "labels",
-    "stylers": [
-      {
-        "visibility": "on"
+        "color": "#95cca3"
       }
     ]
   },
@@ -108,16 +58,10 @@ function initMap() {
   },
   {
     "featureType": "water",
-    "elementType": "geometry",
     "stylers": [
       {
-        "color": "#3a76da"
-      },
-      {
-        "visibility": "on"
+        "color": "#2fb6ff"
       }
     ]
   }
 ]
-		});
-	}

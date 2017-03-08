@@ -56,6 +56,14 @@ function initMap () {
     ]
   },
   {
+    "featureType": "poi.medical",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
     "featureType": "poi.park",
     "stylers": [
       {

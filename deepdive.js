@@ -5,6 +5,7 @@ function initMap(){
  var fountain = new google.maps.LatLng(41.900917,12.483337);
  var steps = new google.maps.LatLng(41.905989,12.482787);
  
+ 
  var map = new google.maps.Map(document.getElementById('map'), {
   center: {lat: 41.890333, lng: 12.491887},
   zoom: 13,
@@ -153,6 +154,15 @@ function initMap(){
   }
 ]
 });
+
+ var sistinecontent = '<div id="infoboxcontent">'+
+  '<h3>Sistine Chapel</h3>'+
+  '<p><i>Cappella Sistina</i></p>'+
+  '<p>Latitude: 41.905, Longitude: 12.455</p>'+
+  '<p><a href="https://en.wikipedia.org/wiki/Sistine_Chapel">https://en.wikipedia.org/wiki/Sistine_Chapel</a></p>'+
+  '</div>';
+  
+  var info
 
  var sistinemarker = new google.maps.Marker({
   position: sistine,

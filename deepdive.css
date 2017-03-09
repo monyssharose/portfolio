@@ -1,0 +1,31 @@
+html {
+	height: 100%;
+	font-family: Helvetica, sans-serif;
+	color: #CC99CC;
+	background: url(https://cgaskell9367.files.wordpress.com/2015/04/watercolor4.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+
+body {
+	height: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+}
+
+a:link {
+	color: #CC99CC;
+} 
+a:visited {
+	color: #CC99CC;
+}
+a:hover {
+	color: #FFCCFF;
+}
+
+#map {
+ height: 800px;
+ width: 800px;
+ margin-left: auto;
+ margin-right: auto
+ }

@@ -162,7 +162,13 @@ function initMap(){
   '<p><a href="https://en.wikipedia.org/wiki/Sistine_Chapel">https://en.wikipedia.org/wiki/Sistine_Chapel</a></p>'+
   '</div>';
   
-  var info
+ var sistineinfo = new google.maps.InfoWindow ({
+  content: sistinecontent
+  });
+ 
+ marker.addListener('click', function() {
+  sistineinfo.open(map, marker);
+  });
 
  var sistinemarker = new google.maps.Marker({
   position: sistine,

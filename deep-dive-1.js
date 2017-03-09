@@ -1,6 +1,6 @@
 function initMap(){
- var sistine = new google.maps.LatLng(41.902887,14.454441);
- var colosseum = new google.maps.LatLng(41.890218,14.492252);
+ var sistine = new google.maps.LatLng(41.902887,12.454441);
+ var colosseum = new google.maps.LatLng(41.890218,12.492252);
  var pantheon = new google.maps.LatLng(41.898615,12.476819);
  var fountain = new google.maps.LatLng(41.900917,12.483337);
  var steps = new google.maps.LatLng(41.905989,12.482787);

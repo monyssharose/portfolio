@@ -1,9 +1,9 @@
 function initMap(){
- var sistine = {lat: 41.902887, lng: 14.454441};
- var colosseum = {lat: 41.890218, lng: 14.492252};
- var pantheon = {lat: 41.898615, lng: 12.476819};
- var fountain = {lat: 41.900917, lng: 12.483337};
- var steps = {lat: 41.905989, lng: 12.482787}
+ var sistine = new google.maps.LatLng(41.902887,14.454441);
+ var colosseum = new google.maps.LatLng(41.890218,14.492252);
+ var pantheon = new google.maps.LatLng(41.898615,12.476819);
+ var fountain = new google.maps.LatLng(41.900917,12.483337);
+ var steps = new google.maps.LatLng(41.905989,12.482787);
  
  var map = new google.maps.Map(document.getElementById('map'), {
   center: {lat: 41.890333, lng: 12.491887},
@@ -20,10 +20,28 @@ function initMap(){
     ]
   },
   {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
     "featureType": "landscape.man_made",
     "stylers": [
       {
         "color": "#d4d4d4"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
       }
     ]
   },
@@ -110,6 +128,15 @@ function initMap(){
     ]
   },
   {
+    "featureType": "road.local",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
     "featureType": "transit",
     "stylers": [
       {
@@ -128,30 +155,30 @@ function initMap(){
 ]
 });
 
- var sistineMarker = new google.maps.Marker({
+ var sistinemarker = new google.maps.Marker({
   position: sistine,
-  map: map,
   title: "Sistine Chapel"
   });
- varcolosseumMarker = new google.maps.Marker({
+ sistinemarker.setMap(map);
+ var colosseummarker = new google.maps.Marker({
   position: colosseum,
-  map: map,
   title: "Colosseum"
   });
- var pantheonMarker = new google.maps.Marker({
+ colosseummarker.setMap(map);
+ var pantheonmarker = new google.maps.Marker({
   position: pantheon,
-  map: map,
   title: "Pantheon"
   });
- var fountainMarker = new google.maps.Marker({
+ pantheonmarker.setMap(map);
+ var fountainmarker = new google.maps.Marker({
   position: fountain,
-  map: map,
   title: "Trevi Fountain"
   });
- var stepsMarker = new google.maps.Marker({
+ fountainmarker.setMap(map);
+ var stepsmarker = new google.maps.Marker({
   position: fountain,
-  map:map,
   title: "Spanish Steps"
   });
-
+ stepsmarker.setMap(map);
+ 
 }

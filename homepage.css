@@ -1,7 +1,7 @@
 html {
 	height: 100%;
 	font-family: Helvetica, sans-serif;
-	color: #CC66FF
+	color: #CC99CC
 }
 
 body {
@@ -10,15 +10,16 @@ body {
         padding: 0;
         text-align: center;
 	background-image: url("https://cgaskell9367.files.wordpress.com/2015/04/watercolor4.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 a:link {
-	color: #CC66FF;
+	color: #CC99CC;
 } 
 a:visited {
-	color: #CC66FF;
+	color: #CC99CC;
 }
 a:hover {
 	color: #FFCCFF;

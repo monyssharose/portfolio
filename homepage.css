@@ -1,6 +1,6 @@
 html {
 	height: 100%
-	color: #330033;
+	color: #CC66FF;
 	font-family: Helvetica, sans-serif;
 }
 
@@ -15,13 +15,13 @@ body {
 }
 
 a:link {
-	color: #330033;
+	color: #CC66FF;
 } 
 a:visited {
-	color: #330033;
+	color: #CC66FF;
 }
 a:hover {
-	color: #660033;
+	color: #FFCCFF;
 }
 
 #map {

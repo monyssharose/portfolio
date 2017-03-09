@@ -3,10 +3,11 @@ body {
         margin: 0;
         padding: 0;
         text-align: center;
+	background-color: hotpink;
 	background-image: url("https://image.freepik.com/free-vector/pink-watercolor-texture_1048-3201.jpg");
 	background-repeat: no-repeat;
 	background-position: center; 
-	background-size: cover;
+	background-attachment: fixed;
 	color: white;
 	font-family: Helvetica, sans-serif;
 	}

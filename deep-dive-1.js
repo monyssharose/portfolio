@@ -160,23 +160,27 @@ function initMap(){
   title: "Sistine Chapel"
   });
  sistinemarker.setMap(map);
+ 
  var colosseummarker = new google.maps.Marker({
   position: colosseum,
   title: "Colosseum"
   });
  colosseummarker.setMap(map);
+ 
  var pantheonmarker = new google.maps.Marker({
   position: pantheon,
   title: "Pantheon"
   });
  pantheonmarker.setMap(map);
+ 
  var fountainmarker = new google.maps.Marker({
   position: fountain,
   title: "Trevi Fountain"
   });
  fountainmarker.setMap(map);
+ 
  var stepsmarker = new google.maps.Marker({
-  position: fountain,
+  position: steps,
   title: "Spanish Steps"
   });
  stepsmarker.setMap(map);

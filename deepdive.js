@@ -158,24 +158,25 @@ function initMap(){
 
 
 
- var sistinecontent = '<div id="infoboxcontent">'+
+ var sistineContentString = '<div id="infoboxcontent">'+
   '<h3>Sistine Chapel</h3>'+
   '<p><i>Cappella Sistina</i></p>'+
   '<p>Latitude: 41.905, Longitude: 12.455</p>'+
   '<p><a href="https://en.wikipedia.org/wiki/Sistine_Chapel">https://en.wikipedia.org/wiki/Sistine_Chapel</a></p>'+
   '</div>';
   
- var sistinemarker = new google.maps.Marker({
+ var sistineInfoWindow = new google.maps.InfoWindow ({
+  content: sistineContentString
+  });
+
+  var sistineMarker = new google.maps.Marker({
   position: sistine,
   title: "Sistine Chapel"
   });
- sistinemarker.setMap(map);
+ sistineMarker.setMap(map);
  
- var sistineinfo = new google.maps.InfoWindow ({
-  content: sistinecontent
-  });
-  google.maps.event.addListener(sistinemarker, 'click', function() {
-  sistineinfo.open(map, sistinemarker);
+ google.maps.event.addListener(sistineMarker, 'click', function() {
+  sistineInfoWindow.open(map, sistineMarker);
   });
   
  
@@ -202,13 +203,5 @@ function initMap(){
   title: "Spanish Steps"
   });
  stepsmarker.setMap(map);
- 
- 
- 
-  var sistineinfo = new google.maps.InfoWindow ({
-  content: sistinecontent
-  });
- google.maps.event.addListener()
-  
  
 }

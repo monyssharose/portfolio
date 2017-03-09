@@ -1,3 +1,9 @@
+html {
+	height: 100%
+	color: #330033;
+	font-family: Helvetica, sans-serif;
+}
+
 body {
 	height: 100%;
         margin: 0;
@@ -6,11 +12,6 @@ body {
 	background-image: url("https://cgaskell9367.files.wordpress.com/2015/04/watercolor4.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-}
-	
-html {
-	color: #330033;
-	font-family: Helvetica, sans-serif;
 }
 
 a:link {

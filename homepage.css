@@ -11,13 +11,13 @@ body {
 	}
 
 a:link {
-	color: white;
+	color: #330033;
 } 
 a:visited {
-	color: white;
+	color: #330033;
 }
 a:hover {
-	color: black;
+	color: #660033;
 }
 
 #map {

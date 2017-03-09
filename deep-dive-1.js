@@ -1,4 +1,10 @@
 function initMap(){
+ var sistine = {lat: 41.902887, lng: 14.454441};
+ var colosseum = {lat: 41.890218, lng: 14.492252};
+ var pantheon = {lat: 41.898615, lng: 12.476819};
+ var fountain = {lat: 41.900917, lng: 12.483337};
+ var steps = {lat: 41.905989, lng: 12.482787}
+ 
  var map = new google.maps.Map(document.getElementById('map'), {
   center: {lat: 41.890333, lng: 12.491887},
   zoom: 13,
@@ -121,4 +127,31 @@ function initMap(){
   }
 ]
 });
+
+ var sistineMarker = new google.maps.Marker({
+  position: sistine,
+  map: map,
+  title: "Sistine Chapel"
+  });
+ varcolosseumMarker = new google.maps.Marker({
+  position: colosseum,
+  map: map,
+  title: "Colosseum"
+  });
+ var pantheonMarker = new google.maps.Marker({
+  position: pantheon,
+  map: map,
+  title: "Pantheon"
+  });
+ var fountainMarker = new google.maps.Marker({
+  position: fountain,
+  map: map,
+  title: "Trevi Fountain"
+  });
+ var stepsMarker = new google.maps.Marker({
+  position: fountain,
+  map:map,
+  title: "Spanish Steps"
+  });
+
 }

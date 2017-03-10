@@ -4,19 +4,20 @@ function initMap(){
  var map = new google.maps.Map(document.getElementById('map'), {
   center: {lat: 36.060574, lng: -107.961692},
   zoom: 18,
+  mapTypeId: 'satellite'
  });
-
- google.maps.MapTypeId.satellite;
 
  var marker = new google.maps.Marker({
   position: center,
-  title: "You Are Here"
+  title: "Pueblo Bonito"
   });
  
  marker.setMap(map);
  
- var contentString = '<div id="infoboxcontent">'+
-  '<h3>You Are Here</h3>'+
+ var contentString = '<div id="infobox">'+
+  '<p><b>Pueblo Bonito</b></p>'+
+  '<p>Peñasco Blanco Trail</p>'+
+  '<p>Nageezi, NM 87037</p>'+
   '<p>Latitude: 36.060574, Longitude: -107.961692</p>'+
   '</div>';
  

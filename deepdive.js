@@ -171,5 +171,23 @@ function initMap(){
  google.maps.event.addListener(sistineMarker, 'click', function() {
   sistineInfoWindow.open(map, sistineMarker);
   });
+ 
+ var colosseumMarker = new google.maps.Marker({
+  position: colosseum,
+  title: "Sistine Chapel"
+  });
+ colosseumMarker.setMap(map);
+ var colosseumContentString = '<div id="infoboxcontent">'+
+  '<h3>Sistine Chapel</h3>'+
+  '<p><i>Cappella Sistina</i></p>'+
+  '<p>Latitude: 41.905, Longitude: 12.455</p>'+
+  '<p><a href="https://en.wikipedia.org/wiki/Sistine_Chapel">https://en.wikipedia.org/wiki/Sistine_Chapel</a></p>'+
+  '</div>';
+ var colosseumInfoWindow = new google.maps.InfoWindow ({
+  content: colosseumContentString
+  });
+ google.maps.event.addListener(colosseumMarker, 'click', function() {
+  colosseumInfoWindow.open(map, colosseumMarker);
+  });
 
 }

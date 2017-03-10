@@ -160,11 +160,26 @@ function initMap(){
   });
  var colosseumMarker = new google.maps.Marker({
   position: colosseum,
-  title: "Sistine Chapel"
+  title: "Colosseum"
+  });
+ var pantheonmarker = new google.maps.Marker({
+  position: pantheon,
+  title: "Pantheon"
+  });
+ var fountainmarker = new google.maps.Marker({
+  position: fountain,
+  title: "Trevi Fountain"
+  });
+ var stepsmarker = new google.maps.Marker({
+  position: steps,
+  title: "Spanish Steps"
   });
  
  sistineMarker.setMap(map);
  colosseumMarker.setMap(map);
+ pantheonmarker.setMap(map);
+ fountainmarker.setMap(map);
+ stepsmarker.setMap(map);
  
  var sistineContentString = '<div id="infoboxcontent">'+
   '<h3>Sistine Chapel</h3>'+
@@ -173,10 +188,28 @@ function initMap(){
   '<p><a href="https://en.wikipedia.org/wiki/Sistine_Chapel">https://en.wikipedia.org/wiki/Sistine_Chapel</a></p>'+
   '</div>';
  var colosseumContentString = '<div id="infoboxcontent">'+
-  '<h3>Sistine Chapel</h3>'+
-  '<p><i>Cappella Sistina</i></p>'+
-  '<p>Latitude: 41.905, Longitude: 12.455</p>'+
+  '<h3>Colosseum</h3>'+
+  '<p><i>Colosseo</i></p>'+
+  '<p>Latitude: 41.890, Longitude: 12.492</p>'+
   '<p><a href="https://en.wikipedia.org/wiki/Sistine_Chapel">https://en.wikipedia.org/wiki/Sistine_Chapel</a></p>'+
+  '</div>';
+ var pantheonContentString = '<div id="infoboxcontent">'+
+  '<h3>Pantheon</h3>'+
+  '<p><i>Pantheon</i></p>'+
+  '<p>Latitude: 41.899, Longitude: 12.477</p>'+
+  '<p><a href="https://en.wikipedia.org/wiki/Pantheon,_Rome">https://en.wikipedia.org/wiki/Pantheon,_Rome</a></p>'+
+  '</div>';
+ var fountainContentString = '<div id="infoboxcontent">'+
+  '<h3>Trevi Fountain</h3>'+
+  '<p><i>Fontana di Trevi</i></p>'+
+  '<p>Latitude: 41.901, Longitude: 12.483</p>'+
+  '<p><a href="https://en.wikipedia.org/wiki/Trevi_Fountain">https://en.wikipedia.org/wiki/Trevi_Fountain</a></p>'+
+  '</div>';
+ var stepsContentString = '<div id="infoboxcontent">'+
+  '<h3>Spanish Steps</h3>'+
+  '<p><i>Scalinata di Trinita dei Monti</i></p>'+
+  '<p>Latitude: 41.906, Longitude: 12.483</p>'+
+  '<p><a href="https://en.wikipedia.org/wiki/Spanish_Steps">https://en.wikipedia.org/wiki/Spanish_Steps</a></p>'+
   '</div>';
  
  var sistineInfoWindow = new google.maps.InfoWindow ({
@@ -185,12 +218,30 @@ function initMap(){
  var colosseumInfoWindow = new google.maps.InfoWindow ({
   content: colosseumContentString
   });
+ var pantheonInfoWindow = new google.maps.InfoWindow ({
+  content: pantheonContentString
+  });
+ var fountainInfoWindow = new google.maps.InfoWindow ({
+  content: fountainContentString
+  });
+ var stepsInfoWindow = new google.maps.InfoWindow ({
+  content: stepsContentString
+  });
  
  google.maps.event.addListener(sistineMarker, 'click', function() {
   sistineInfoWindow.open(map, sistineMarker);
   });
  google.maps.event.addListener(colosseumMarker, 'click', function() {
   colosseumInfoWindow.open(map, colosseumMarker);
+  });
+ google.maps.event.addListener(pantheonMarker, 'click', function() {
+  pantheonInfoWindow.open(map, pantheonMarker);
+  });
+ google.maps.event.addListener(fountainMarker, 'click', function() {
+  fountainInfoWindow.open(map, fountainMarker);
+  });
+ google.maps.event.addListener(stepsMarker, 'click', function() {
+  stepsInfoWindow.open(map, stepsMarker);
   });
 
 }

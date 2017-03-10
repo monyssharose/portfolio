@@ -154,71 +154,6 @@ function initMap(){
 ]
 });
 
- var sistineContentString = '<div id="infoboxcontent">'+
-  '<h3>Sistine Chapel</h3>'+
-  '<p><i>Cappella Sistina</i></p>'+
-  '<p>Latitude: 41.905, Longitude: 12.455</p>'+
-  '<p><a href="https://en.wikipedia.org/wiki/Sistine_Chapel">https://en.wikipedia.org/wiki/Sistine_Chapel</a></p>'+
-  '</div>';
- var sistineInfoWindow = new google.maps.InfoWindow ({
-  content: sistineContentString
-  });
- google.maps.event.addListener(sistineMarker, 'click', function() {
-  sistineInfoWindow.open(map, sistineMarker);
-  });
- 
- var colosseumContentString = '<div id="infoboxcontent">'+
-  '<h3>Colosseum</h3>'+
-  '<p><i>Colosseo</i></p>'+
-  '<p>Latitude: 41.890, Longitude: 12.492</p>'+
-  '<p><a href="https://en.wikipedia.org/wiki/Colosseum">https://en.wikipedia.org/wiki/Colosseum</a></p>'+
-  '</div>';
- var colosseumInfoWindow = new google.maps.InfoWindow ({
-  content: colosseumContentString
-  });
- google.maps.event.addListener(colosseumMarker, 'click', function() {
-  colosseumInfoWindow.open(map, colosseumMarker);
-  });
-
- var pantheonContentString = '<div id="infoboxcontent">'+
-  '<h3>Pantheon</h3>'+
-  '<p><i>Pantheon</i></p>'+
-  '<p>Latitude: 41.899, Longitude: 12.477</p>'+
-  '<p><a href="https://en.wikipedia.org/wiki/Pantheon,_Rome">https://en.wikipedia.org/wiki/Pantheon,_Rome</a></p>'+
-  '</div>';
- var pantheonInfoWindow = new google.maps.InfoWindow ({
-  content: pantheonContentString
-  });
- google.maps.event.addListener(pantheonMarker, 'click', function() {
-  pantheonInfoWindow.open(map, pantheonMarker);
-  });
-
- var fountainContentString = '<div id="infoboxcontent">'+
-  '<h3>Trevi Fountain</h3>'+
-  '<p><i>Fontana di Trevi</i></p>'+
-  '<p>Latitude: 41.901, Longitude: 12.483</p>'+
-  '<p><a href="https://en.wikipedia.org/wiki/Trevi_Fountain">https://en.wikipedia.org/wiki/Trevi_Fountain</a></p>'+
-  '</div>';
- var fountainInfoWindow = new google.maps.InfoWindow ({
-  content: fountainContentString
-  });
- google.maps.event.addListener(fountainMarker, 'click', function() {
-  fountainInfoWindow.open(map, fountainMarker);
-  });
- 
- var stepsContentString = '<div id="infoboxcontent">'+
-  '<h3>Spanish Steps</h3>'+
-  '<p><i>Scalinata di Trinita dei Monti</i></p>'+
-  '<p>Latitude: 41.906, Longitude: 12.483</p>'+
-  '<p><a href="https://en.wikipedia.org/wiki/Spanish_Steps">https://en.wikipedia.org/wiki/Spanish_Steps</a></p>'+
-  '</div>';
- var stepsInfoWindow = new google.maps.InfoWindow ({
-  content: stepsContentString
-  });
- google.maps.event.addListener(stepsMarker, 'click', function() {
-  stepsInfoWindow.open(map, stepsMarker);
-  });
- 
  var sistineMarker = new google.maps.Marker({
   position: sistine,
   title: "Sistine Chapel"
@@ -245,4 +180,64 @@ function initMap(){
   });
  stepsmarker.setMap(map);
  
+ var sistineContentString = '<div id="infoboxcontent">'+
+  '<h3>Sistine Chapel</h3>'+
+  '<p><i>Cappella Sistina</i></p>'+
+  '<p>Latitude: 41.905, Longitude: 12.455</p>'+
+  '<p><a href="https://en.wikipedia.org/wiki/Sistine_Chapel">https://en.wikipedia.org/wiki/Sistine_Chapel</a></p>'+
+  '</div>';
+ var sistineInfoWindow = new google.maps.InfoWindow ({
+  content: sistineContentString
+  });
+ google.maps.event.addListener(sistineMarker, 'click', function() {
+  sistineInfoWindow.open(map, sistineMarker);
+  });
+ var colosseumContentString = '<div id="infoboxcontent">'+
+  '<h3>Colosseum</h3>'+
+  '<p><i>Colosseo</i></p>'+
+  '<p>Latitude: 41.890, Longitude: 12.492</p>'+
+  '<p><a href="https://en.wikipedia.org/wiki/Colosseum">https://en.wikipedia.org/wiki/Colosseum</a></p>'+
+  '</div>';
+ var colosseumInfoWindow = new google.maps.InfoWindow ({
+  content: colosseumContentString
+  });
+ google.maps.event.addListener(colosseumMarker, 'click', function() {
+  colosseumInfoWindow.open(map, colosseumMarker);
+  });
+ var pantheonContentString = '<div id="infoboxcontent">'+
+  '<h3>Pantheon</h3>'+
+  '<p><i>Pantheon</i></p>'+
+  '<p>Latitude: 41.899, Longitude: 12.477</p>'+
+  '<p><a href="https://en.wikipedia.org/wiki/Pantheon,_Rome">https://en.wikipedia.org/wiki/Pantheon,_Rome</a></p>'+
+  '</div>';
+ var pantheonInfoWindow = new google.maps.InfoWindow ({
+  content: pantheonContentString
+  });
+ google.maps.event.addListener(pantheonMarker, 'click', function() {
+  pantheonInfoWindow.open(map, pantheonMarker);
+  });
+ var fountainContentString = '<div id="infoboxcontent">'+
+  '<h3>Trevi Fountain</h3>'+
+  '<p><i>Fontana di Trevi</i></p>'+
+  '<p>Latitude: 41.901, Longitude: 12.483</p>'+
+  '<p><a href="https://en.wikipedia.org/wiki/Trevi_Fountain">https://en.wikipedia.org/wiki/Trevi_Fountain</a></p>'+
+  '</div>';
+ var fountainInfoWindow = new google.maps.InfoWindow ({
+  content: fountainContentString
+  });
+ google.maps.event.addListener(fountainMarker, 'click', function() {
+  fountainInfoWindow.open(map, fountainMarker);
+  });
+ var stepsContentString = '<div id="infoboxcontent">'+
+  '<h3>Spanish Steps</h3>'+
+  '<p><i>Scalinata di Trinita dei Monti</i></p>'+
+  '<p>Latitude: 41.906, Longitude: 12.483</p>'+
+  '<p><a href="https://en.wikipedia.org/wiki/Spanish_Steps">https://en.wikipedia.org/wiki/Spanish_Steps</a></p>'+
+  '</div>';
+ var stepsInfoWindow = new google.maps.InfoWindow ({
+  content: stepsContentString
+  });
+ google.maps.event.addListener(stepsMarker, 'click', function() {
+  stepsInfoWindow.open(map, stepsMarker);
+  });
 }

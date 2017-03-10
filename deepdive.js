@@ -191,7 +191,7 @@ function initMap(){
   '<h3>Colosseum</h3>'+
   '<p><i>Colosseo</i></p>'+
   '<p>Latitude: 41.890, Longitude: 12.492</p>'+
-  '<p><a href="https://en.wikipedia.org/wiki/Sistine_Chapel">https://en.wikipedia.org/wiki/Sistine_Chapel</a></p>'+
+  '<p><a href="https://en.wikipedia.org/wiki/Colosseum">https://en.wikipedia.org/wiki/Colosseum</a></p>'+
   '</div>';
  var pantheonContentString = '<div id="infoboxcontent">'+
   '<h3>Pantheon</h3>'+

@@ -20,6 +20,11 @@ body {
  margin-right: auto
  }
 
+#map div.ol-viewport div.ol-overlaycontainer-stopevent div.ol-overviewmap.ol-unselectable.ol-control.ol-uncollapsible {
+	top: 200px;
+	bottom: 300px;
+}
+
 a:link {
 	color: #CC99CC;
 } 
@@ -30,11 +35,11 @@ a:hover {
 	color: white;
 }
 
-#select h3 {
+#select li {
 	cursor:pointer;
 }
 
-#select h3:hover {
+#select li:hover {
 	color: white
 	background-color: #CC99CC;
 }

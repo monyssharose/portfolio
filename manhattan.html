@@ -29,9 +29,13 @@
 	a:hover {
 	 color: white;
 	}
-   </style>
+   </style>	
+  </head>
 
-   <script>
+<body>
+ <h1>Manhattan</h1>
+ <div id='map'></div>
+ <script>
     var map = new ol.Map({
      target: 'map',
      layers: [
@@ -40,16 +44,11 @@
       })
 	 ],
      view: new ol.View({
-      center: ol.proj.fromLonLat([40.766328,-73.977639]),
+      center: ([40.766328,-73.977639]),
       zoom: 14
      })
 	});
-   </script>	
-  </head>
-
-<body>
- <h1>Manhattan</h1>
- <div id='map'></div>
+   </script>
  <a href="index.html"><h3>home</h3></a>
 </body>
 </html>

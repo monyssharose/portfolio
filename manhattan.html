@@ -21,7 +21,19 @@
 	
 	<div id='map'></div>
 
-	<script src="manhattan.js" type="text/javascript"></script>
+	<script>
+	var myMap = new ol.Map({
+	target: 'map',
+	view: new ol.View({
+		layers: [
+			new ol.layer.Tile({
+				source: new ol.source.osm({
+				})
+		center: ol.proj.fromLonLat([-73.977,40.766]),
+		zoom: 12
+		})
+	});
+	</script>
 	
 	<a href="index.html"><h3>home</h3></a>
 </body>

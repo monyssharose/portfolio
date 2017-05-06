@@ -4,8 +4,8 @@ body {
 }
 
 #map,.map {
-	width:800px;
-	height:800px;
+	width:400px;
+	height:400px;
 }
 
 #map_selector li {

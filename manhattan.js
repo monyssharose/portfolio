@@ -1,7 +1,7 @@
-var watercolor = new ol.layer.Group({
+var terrain = new ol.layer.Group({
 	layers: [
 		new ol.layer.Tile({
-			source: new ol.source.Stamen({layer: 'watercolor'})
+			source: new ol.source.Stamen({layer: 'terrain'})
 		})
 	]
 });
@@ -14,14 +14,13 @@ var toner = new ol.layer.Group({
 	]
 });
 
-var terrain = new ol.layer.Group({
+var watercolor = new ol.layer.Group({
 	layers: [
 		new ol.layer.Tile({
-			source: new ol.source.Stamen({layer: 'terrain'})
+			source: new ol.source.Stamen({layer: 'watercolor'})
 		})
 	]
 });
-
 
 var myMap = new ol.Map({
 	target: 'map',
@@ -31,7 +30,8 @@ var myMap = new ol.Map({
 		})
 	});
 
-
+setMapType('watercolor')
+	
 function setMapType(newType) {
     if(newType == 'OSM') {
         myMap.setLayerGroup(Layer_OSM);
@@ -43,6 +43,3 @@ function setMapType(newType) {
         myMap.setLayerGroup(terrain);
 	}
 }
-
-
-setMapType('watercolor')

@@ -1,34 +1,17 @@
-<!DOCTYPE>
 <html>
- <head>
-  <title>Manhattan</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.0.1/ol.css" type="text/css">
-  <style>
-  #map {
-   width: 800px
-   height: 800px
-  }
-  </style>
-  </head>
+<head>
+	<link rel="stylesheet" href="css/manhattan.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.0.1/ol.css" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.0.1/ol.js" type="text/javascript"></script>
+</head>
 
 <body>
- <h1>Manhattan</h1>
- <div id='map'></div>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.0.1/ol.js"type="text/javascript"></script>
- <script>
-    var map = new ol.Map({
-     target: 'map',
-     layers: [
-      new ol.layer.Tile({
-       source: new ol.source.OSM()
-      })
-	 ],
-     view: new ol.View({
-      center: ([40.766328,-73.977639]),
-      zoom: 14
-     })
-	});
-   </script>
- <a href="index.html"><h3>home</h3></a>
+	<h1>This is a very simple OpenLayers 4 sample map page</h1>
+
+	<div id='map'><!-- This is where the map will be displayed --></div>
+
+	<!-- import the external Javascript file with the map configuration code -->
+	<script src="js/manhattan.js" type="text/javascript"></script>
 </body>
+
 </html>

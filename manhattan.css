@@ -10,7 +10,7 @@ body {
 	height: 100%;
         margin: 0;
         padding: 0;
-        text-align: center;
+        text-align: left;
 }
 
 #map {
@@ -20,10 +20,6 @@ body {
  margin-right: auto
  }
 
-#map div.ol-viewport div.ol-overlaycontainer-stopevent div.ol-overviewmap.ol-unselectable.ol-control.ol-uncollapsible {
-	top: 200px;
-	bottom: 300px;
-}
 
 a:link {
 	color: #CC99CC;
@@ -40,6 +36,5 @@ a:hover {
 }
 
 #select li:hover {
-	color: white
-	background-color: #CC99CC;
+	background-color: white;
 }

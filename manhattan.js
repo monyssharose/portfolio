@@ -8,7 +8,7 @@ var watercolor = new ol.layer.Group({
 
 var toner = new ol.layer.Group({
 	layers: [
-		new.ol.layer.Tile({
+		new ol.layer.Tile({
 			source: new ol.source.Stamen({layer: 'toner'})
 		})
 	]
@@ -16,7 +16,7 @@ var toner = new ol.layer.Group({
 
 var terrain = new ol.layer.Group({
 	layers: [
-		new.ol.layer.Tile({
+		new ol.layer.Tile({
 			source: new ol.source.Stamen({layer: 'terrain'})
 		})
 	]

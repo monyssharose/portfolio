@@ -10,9 +10,14 @@
 <body>
 	<h1>Manhattan</h1>
 
-		<h3 onclick="setMapType('Watercolor')">Watercolor</h3>
-		<h3 onclick="setMapType('Toner')">Toner</h3>
-		<h3 onclick="setMapType('Terrain')">Terrain</h3>
+		<div id='select'>
+			Select a Basemap:
+			<ul>
+				<li onclick="setMapType('Terrain')">Terrain</li>
+				<li onclick="setMapType('Toner')">Toner</li>
+				<li onclick="setMapType('Watercolor')">Watercolor</li>
+			</ul>
+		</div>
 	
 	<div id='map'></div>
 

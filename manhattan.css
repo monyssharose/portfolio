@@ -8,7 +8,7 @@ html {
 
 body {
 	height: 100%;
-        margin: 0;
+        margin: 50;
         padding: 0;
         text-align: center;
 }
@@ -31,12 +31,6 @@ a:hover {
 	color: white;
 }
 
-#select li {
+#select h3 {
 	cursor:pointer;
-	width:150px;
-}
-
-#select li:hover {
-	color: white;
-	background-color: #CC99CC;
 }

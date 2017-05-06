@@ -29,8 +29,6 @@ var myMap = new ol.Map({
 		zoom: 12
 		})
 	});
-
-setMapType('watercolor')
 	
 function setMapType(newType) {
     if(newType == 'OSM') {
@@ -43,3 +41,5 @@ function setMapType(newType) {
         myMap.setLayerGroup(terrain);
 	}
 }
+
+setMapType('Watercolor')

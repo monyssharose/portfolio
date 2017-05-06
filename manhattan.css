@@ -8,7 +8,7 @@ html {
 
 body {
 	height: 100%;
-        margin: 0;
+        margin: 100px;
         padding: 0;
         text-align: left;
 }
@@ -36,5 +36,6 @@ a:hover {
 }
 
 #select li:hover {
-	background-color: white;
+	color: white;
+	background-color: #CC99CC;
 }

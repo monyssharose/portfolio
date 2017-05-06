@@ -33,6 +33,7 @@ a:hover {
 
 #select li {
 	cursor:pointer;
+	width:50px;
 }
 
 #select li:hover {

@@ -1,25 +1,31 @@
+html {
+	height: 100%;
+	font-family: Helvetica, sans-serif;
+	color: #CC99CC;
+	background: url(https://cgaskell9367.files.wordpress.com/2015/04/watercolor4.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+
 body {
-	width:100%;
-	height:100%
+	height: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
 }
 
-#map,.map {
-	width:400px;
-	height:400px;
+a:link {
+	color: #CC99CC;
+} 
+a:visited {
+	color: #CC99CC;
+}
+a:hover {
+	color: white;
 }
 
-#map_selector li {
-	cursor:pointer;
-	width:350px;
-}
-
-#map_selector li:hover {
-	background-color: yellow;
-}
-
-
-
-#map div.ol-viewport div.ol-overlaycontainer-stopevent div.ol-overviewmap.ol-unselectable.ol-control.ol-uncollapsible {
-	top: 200px;
-	bottom: 300px;
-}
+#map {
+ height: 500px;
+ width: 500px;
+ margin-left: auto;
+ margin-right: auto
+ }

@@ -13,6 +13,13 @@ body {
         text-align: center;
 }
 
+#map {
+ height: 600px;
+ width: 800px;
+ margin-left: auto;
+ margin-right: auto
+ }
+
 a:link {
 	color: #CC99CC;
 } 
@@ -23,18 +30,11 @@ a:hover {
 	color: white;
 }
 
-#select h3:hover {
-	background-color: white;
+#select h3 {
+	cursor:pointer;
 }
 
-#map {
- height: 600px;
- width: 800px;
- margin-left: auto;
- margin-right: auto
- }
- 
-#map div.ol-viewport div.ol-overlaycontainer-stopevent div.ol-overviewmap.ol-unselectable.ol-control.ol-uncollapsible {
-	top: 200px;
-	bottom: 300px;
+#select h3:hover {
+	color: white
+	background-color: #CC99CC;
 }

@@ -1,7 +1,6 @@
 var projection = ol.proj.get('EPSG:3857');
 
 
-
 var museum_point_color = [204,153,204,1]
 var subway_line_color = [172,108,172,1]
 
@@ -17,17 +16,6 @@ var museum_point_style = new ol.style.Style({
           })
         })
 });
-
-var subway_style = new ol.style.Style({
-	fill: new ol.style.Fill({
-	  color: subway_line_color,
-	}),
-	stroke: new ol.style.Stroke({
-	  color: subway_line_color,
-	  width: 1.5
-	}),
-});
-
 
 
 var METCoord = [-73.963228,40.779664]
@@ -58,19 +46,6 @@ var NineElevenFeature = new ol.Feature({
 	geometry: NineElevenPoint
 })
 
-
-
-var subway_kml = new ol.layer.Vector({
-	source: new ol.source.Vector({
-		url: 'https://monyssharose.github.io/portfolio/NewYorkSubwayKML.kml',
-		projection: projection,
-		format: new ol.format.KML({
-			extractStyles: false,
-			extractAttributes: false,
-		})
-	}),
-	style: subway_style
-});
 
 var museum_points= new ol.layer.Vector({
 	source: new ol.source.Vector({

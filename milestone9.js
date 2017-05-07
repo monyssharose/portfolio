@@ -1,6 +1,7 @@
 var projection = ol.proj.get('EPSG:3857');
 
 
+
 var museum_point_color = [204,153,204,1]
 var subway_line_color = [172,108,172,1]
 
@@ -16,6 +17,17 @@ var museum_point_style = new ol.style.Style({
           })
         })
 });
+
+var subway_style = new ol.style.Style({
+	fill: new ol.style.Fill({
+	  color: subway_line_color,
+	}),
+	stroke: new ol.style.Stroke({
+	  color: subway_line_color,
+	  width: 1.5
+	}),
+});
+
 
 
 var METCoord = [-73.963228,40.779664]
@@ -47,6 +59,19 @@ var NineElevenFeature = new ol.Feature({
 })
 
 
+
+var subway_kml = new ol.layer.Vector({
+	source: new ol.source.Vector({
+		url: 'https://monyssharose.github.io/portfolio/NewYorkSubwayKML.kml',
+		projection: projection,
+		format: new ol.format.KML({
+			extractStyles: false,
+			extractAttributes: false,
+		})
+	}),
+	style: subway_style
+});
+
 var museum_points= new ol.layer.Vector({
 	source: new ol.source.Vector({
 		projection: projection,
@@ -55,15 +80,20 @@ var museum_points= new ol.layer.Vector({
 	style: museum_point_style
 });
 
-var myMap = new ol.Map({
-	target: 'map',
+var toner_map = new ol.Group({
 	layers: [
   		new ol.layer.Tile({
 			source: new ol.source.Stamen({layer: 'toner'})
     	})
 	],
+});
+
+var myMap = new ol.Map({
+	target: 'map',
+	layers: [subway_kml,museum_points,toner_map],
 	view: new ol.View({
 		center: ol.proj.fromLonLat([-73.977,40.766]),
 		zoom: 12
+		projection: projection
 	})
 });

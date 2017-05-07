@@ -80,20 +80,15 @@ var museum_points= new ol.layer.Vector({
 	style: museum_point_style
 });
 
-var toner_map = new ol.Group({
+var myMap = new ol.Map({
+	target: 'map',
 	layers: [
   		new ol.layer.Tile({
 			source: new ol.source.Stamen({layer: 'toner'})
-    	})
+    	}),subway_kml,museum_points
 	],
-});
-
-var myMap = new ol.Map({
-	target: 'map',
-	layers: [subway_kml,museum_points,toner_map],
 	view: new ol.View({
 		center: ol.proj.fromLonLat([-73.977,40.766]),
 		zoom: 12
-		projection: projection
 	})
 });

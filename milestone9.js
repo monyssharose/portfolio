@@ -2,14 +2,10 @@ var projection = ol.proj.get('EPSG:3857');
 
 
 
-var MET_point_color = [97,255,239,1]
-var AMNH_point_color = [250,255,97,1]
-var MoMA_point_color = [97,231,255,1]
-var Guggenheim_point_color = [255,97,158,1]
-var NineEleven_point_color = [255,134,97,1]
+var museum_point_color = [204,153,204,1]
 var subway_line_color = [172,108,172,1]
 
-var MET_point_style = new ol.style.Style({
+var museum_point_style = new ol.style.Style({
         image: new ol.style.Circle({
           radius: 5,
           stroke: new ol.style.Stroke({
@@ -17,59 +13,7 @@ var MET_point_style = new ol.style.Style({
             width: 1
           }),
           fill: new ol.style.Fill({
-            color: MET_point_color,
-          })
-        })
-});
-
-var AMNH_point_style = new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 5,
-          stroke: new ol.style.Stroke({
-            color: 'black',
-            width: 1
-          }),
-          fill: new ol.style.Fill({
-            color: AMNH_point_color,
-          })
-        })
-});
-
-var MoMA_point_style = new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 5,
-          stroke: new ol.style.Stroke({
-            color: 'black',
-            width: 1
-          }),
-          fill: new ol.style.Fill({
-            color: MoMa_point_color,
-          })
-        })
-});
-
-var Gugenheim_point_style = new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 5,
-          stroke: new ol.style.Stroke({
-            color: 'black',
-            width: 1
-          }),
-          fill: new ol.style.Fill({
-            color: Gugenheim_point_color,
-          })
-        })
-});
-
-var NineEleven_point_style = new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 5,
-          stroke: new ol.style.Stroke({
-            color: 'black',
-            width: 1
-          }),
-          fill: new ol.style.Fill({
-            color: NineEleven_point_color,
+            color: museum_point_color,
           })
         })
 });
@@ -128,44 +72,12 @@ var subway_kml = new ol.layer.Vector({
 	style: subway_style
 });
 
-var MET_point= new ol.layer.Vector({
+var museum_points= new ol.layer.Vector({
 	source: new ol.source.Vector({
 		projection: projection,
-		features: [METFeature]
+		features: [METFeature,AMNHFeature,MoMAFeature,GuggenheimFeature,NineElevenFeature]
 	}),
-	style: MET_point_style
-});
-
-var AMNH_point= new ol.layer.Vector({
-	source: new ol.source.Vector({
-		projection: projection,
-		features: [AMNHFeature]
-	}),
-	style: AMNH_point_style
-});
-
-var MoMA_point= new ol.layer.Vector({
-	source: new ol.source.Vector({
-		projection: projection,
-		features: [MoMaFeature]
-	}),
-	style: MoMA_point_style
-});
-
-var Gugenheim_point= new ol.layer.Vector({
-	source: new ol.source.Vector({
-		projection: projection,
-		features: [GugenheimFeature]
-	}),
-	style: Gugenheim_point_style
-});
-
-var NineEleven_point= new ol.layer.Vector({
-	source: new ol.source.Vector({
-		projection: projection,
-		features: [NineElevenFeature]
-	}),
-	style: NineEleven_point_style
+	style: museum_point_style
 });
 
 var myMap = new ol.Map({
@@ -173,7 +85,7 @@ var myMap = new ol.Map({
 	layers: [
   		new ol.layer.Tile({
 			source: new ol.source.Stamen({layer: 'toner'})
-    	}),subway_kml,MET_point,AMNH_point,MoMA_point,Gugenheim_point,NineEleven_point
+    	}),subway_kml,museum_points
 	],
 	view: new ol.View({
 		center: ol.proj.fromLonLat([-73.977,40.766]),

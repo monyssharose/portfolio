@@ -2,7 +2,7 @@ var projection = ol.proj.get('EPSG:4269');
 
 
 var raster_one = new ol.layer.Tile({
-	opacity: 0.5,
+	opacity: 0.6,
 	visible: true,
 	source: new ol.source.TileWMS({
 		params: {'LAYERS':'monyssharose_ws:35106-A5'},
@@ -13,7 +13,7 @@ var raster_one = new ol.layer.Tile({
 });
 
 var raster_two = new ol.layer.Tile({
-	opacity: 0.5,
+	opacity: 0.6,
 	visible: true,
 	source: new ol.source.TileWMS({
 		params: {'LAYERS':'monyssharose_ws:35106-A6'},
@@ -55,7 +55,7 @@ var myMap = new ol.Map({
 	target: 'map',
 	layers: [
 		new ol.layer.Tile({
-			source: new ol.source.Stamen({layer: 'terrain'})
+			source: new ol.source.Stamen({layer: 'toner'})
 		}),raster_one,raster_two,vector_one,vector_two,vector_three
 	],
 	view: new ol.View({

@@ -1,3 +1,6 @@
+var projection = ol.proj.get('EPSG:4269');
+
+
 var raster_one = new ol.layer.Image({
 	source: new ol.source.ImageWMS({
 		params: {'LAYERS':'monyssharose_ws:35106-A5'},

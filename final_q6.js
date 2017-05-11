@@ -8,7 +8,7 @@ var raster_one = new ol.layer.Tile({
 		serverType: 'geoserver',
 		projection: projection
 	})
-	opacity: 0.5
+	opacity: 1.0
 });
 
 var raster_two = new ol.layer.Tile({
@@ -18,7 +18,7 @@ var raster_two = new ol.layer.Tile({
 		serverType: 'geoserver',
 		projection: projection
 	})
-	opacity: 0.5
+	opacity: 1.0
 });
 
 var vector_one = new ol.layer.Tile({
@@ -61,3 +61,6 @@ var myMap = new ol.Map({
 		zoom: 13
 	})
 });
+
+raster_one.setOpacity(0.6);
+raster_two.setOpacity(0.6);

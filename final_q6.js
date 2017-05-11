@@ -42,7 +42,9 @@ var vector_three = new ol.layer.Tile({
 var myMap = new ol.Map({
 	target: 'map',
 	layers: [
-		raster_one,raster_two,vector_one,vector_two,vector_three
+		new ol.layer.Tile({
+			source: new ol.source.Stamen({layer: 'terrain'})
+		}),raster_one,raster_two,vector_one,vector_two,vector_three
 	],
 	view: new ol.View({
 		center: ol.proj.fromLonLat([-106.586374,35.077869]),

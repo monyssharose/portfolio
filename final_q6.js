@@ -28,10 +28,11 @@ var myMap = new ol.Map({
 	layers: [
 		new ol.layer.Tile({
 			source: new ol.source.Stamen({layer: 'terrain'})
-		}),raster_one,raster_two,vector_one,vector_two,vector_three
+		}),vector_one,vector_two,vector_three
 	],
 	view: new ol.View({
 		center: ol.proj.fromLonLat([-106.586374,35.077869]),
-		zoom: 13
+		zoom: 13,
+		projection: 'EPSG:4269'
 	})
 });

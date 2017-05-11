@@ -2,23 +2,25 @@ var projection = ol.proj.get('EPSG:4269');
 
 
 var raster_one = new ol.layer.Tile({
+	opacity: 0.5,
+	visible: true,
 	source: new ol.source.TileWMS({
 		params: {'LAYERS':'monyssharose_ws:35106-A5'},
 		url: 'http://mapper.internetmapping.net:8081/geoserver/monyssharose_ws/wms?',
 		serverType: 'geoserver',
 		projection: projection
 	})
-	opacity: 1.0
 });
 
 var raster_two = new ol.layer.Tile({
+	opacity: 0.5,
+	visible: true,
 	source: new ol.source.TileWMS({
 		params: {'LAYERS':'monyssharose_ws:35106-A6'},
 		url: 'http://mapper.internetmapping.net:8081/geoserver/monyssharose_ws/wms?',
 		serverType: 'geoserver',
 		projection: projection
 	})
-	opacity: 1.0
 });
 
 var vector_one = new ol.layer.Tile({
@@ -61,6 +63,3 @@ var myMap = new ol.Map({
 		zoom: 13
 	})
 });
-
-raster_one.setOpacity(0.6);
-raster_two.setOpacity(0.6);

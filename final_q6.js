@@ -5,7 +5,7 @@ var raster_one = new ol.layer.Image({
 		params: {'LAYERS':'monyssharose_ws:35106-A5'},
 		url: 'http://mapper.internetmapping.net:8081/geoserver/monyssharose/wms?',
 		serverType: 'geoserver'
-		projection: 'projection'
+		projection: projection
 	})
 })
 
@@ -14,7 +14,7 @@ var raster_two = new ol.layer.Image({
 		params: {'LAYERS':'monyssharose_ws:35106-A6'},
 		url: 'http://mapper.internetmapping.net:8081/geoserver/monyssharose/wms?',
 		serverType: 'geoserver'
-		projection: 'projection'
+		projection: projection
 	})
 })
 

@@ -1,15 +1,13 @@
-var projection = ol.proj.get('EPSG:4269');
-
-var raster_one = new ol.layer.Image({
-	source: new ol.source.ImageWMS({
+var raster_one = new ol.layer.Tile({
+	source: new ol.source.TileWMS({
 		params: {'LAYERS':'monyssharose_ws:35106-A5'},
 		url: 'http://mapper.internetmapping.net:8081/geoserver/monyssharose/wms?',
 		serverType: 'geoserver'
 	})
 })
 
-var raster_two = new ol.layer.Image({
-	source: new ol.source.ImageWMS({
+var raster_two = new ol.layer.Tile({
+	source: new ol.source.TileWMS({
 		params: {'LAYERS':'monyssharose_ws:35106-A6'},
 		url: 'http://mapper.internetmapping.net:8081/geoserver/monyssharose/wms?',
 		serverType: 'geoserver'

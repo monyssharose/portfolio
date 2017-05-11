@@ -1,3 +1,6 @@
+var projection = ol.proj.get('EPSG:4269');
+
+
 var vector_one = new ol.layer.Tile({
 	source: new ol.source.TileWMS({
 		params: {'LAYERS':'monyssharose_ws:35106-A5'},

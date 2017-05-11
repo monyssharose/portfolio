@@ -7,7 +7,7 @@ var raster_one = new ol.layer.Tile({
 		url: 'http://mapper.internetmapping.net:8081/geoserver/monyssharose_ws/wms?',
 		serverType: 'geoserver',
 		projection: projection,
-		transparent: true
+		opacity: 0.5
 	})
 });
 
@@ -17,7 +17,7 @@ var raster_two = new ol.layer.Tile({
 		url: 'http://mapper.internetmapping.net:8081/geoserver/monyssharose_ws/wms?',
 		serverType: 'geoserver',
 		projection: projection,
-		transparent: true
+		opacity: 0.5
 	})
 });
 

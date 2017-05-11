@@ -1,24 +1,3 @@
-var projection = ol.proj.get('EPSG:4269');
-
-
-var vector_one = new ol.layer.Tile({
-	source: new ol.source.TileWMS({
-		params: {'LAYERS':'monyssharose_ws:35106-A5'},
-		url: 'http://mapper.internetmapping.net:8081/geoserver/monyssharose_ws/wms?',
-		serverType: 'geoserver'
-		projection: projection
-	})
-})
-
-var vector_one = new ol.layer.Tile({
-	source: new ol.source.TileWMS({
-		params: {'LAYERS':'monyssharose_ws:35106-A6'},
-		url: 'http://mapper.internetmapping.net:8081/geoserver/monyssharose_ws/wms?',
-		serverType: 'geoserver'
-		projection: projection
-	})
-})
-
 var vector_one = new ol.layer.Tile({
 	source: new ol.source.TileWMS({
 		params: {'LAYERS':'monyssharose_ws:35106-A5_CONT'},
